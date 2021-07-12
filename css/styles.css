@@ -93,16 +93,19 @@ p {
 .list {
   display: flex;
   margin-left: 93px;
+  /* padding-top: 40px;
+  padding-bottom: 40px; */
 }
 
-/* .list::after {
+.page-current::after {
   content: '';
+  display: block;
   width: 48px;
   height: 4px;
 
   background: #2196f3;
   border-radius: 2px;
-} */
+}
 
 .menu + .menu {
   margin-left: 50px;
