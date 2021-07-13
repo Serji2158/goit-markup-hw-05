@@ -754,8 +754,16 @@ img {
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.2);
+
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
 /*-----------ModalWindow---------*/
 
 .modal {
@@ -767,8 +775,6 @@ img {
   transform: translate(-50%, -50%);
   border-radius: 4px;
   background-color: #ffffff;
-
-  transition-duration: 1000ms;
 }
 
 .close-btn {
@@ -780,10 +786,4 @@ img {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background: #ffffff;
-}
-
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
 }
